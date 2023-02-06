@@ -1,12 +1,20 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
 import scrapy
 
 
 class ScrapperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    """Define the Item fields that will be scraped."""
+
+    title = scrapy.Field()
+    company = scrapy.Field()
+    location = scrapy.Field()
+    date = scrapy.Field()
+    category = scrapy.Field()
+    seniority = scrapy.Field()
+    requirements = scrapy.Field()
+    optional = scrapy.Field()
+    offer_specs = scrapy.Field()
+    salary_value = scrapy.Field()
+    salary_type = scrapy.Field()
+    requirements_description = scrapy.Field()
+    offer_description = scrapy.Field()
+    tasks_range = scrapy.Field()
